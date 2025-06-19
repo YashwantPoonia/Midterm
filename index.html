@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yashwant</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">HTML5</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+      </div>
+      <div class="nav-right">
+        <button data-bs-theme-value="dark" onclick="setDarkMode()">Dark</button>
+        <button data-bs-theme-value="light" onclick="setLightMode()">Light</button>
+        <button>Contact Me</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col-left">
+        <p>Square calculator using closure.<br><br>
+        Result = base²<br>(e.g., 5² = 25).</p>
+      </div>
+      <div class="col-right">
+        <input type="number" id="inputNumber" placeholder="Enter a number">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-left button-align">
+        <button onclick="showResult()">Enter</button>
+      </div>
+      <div class="col-right">
+        <div id="resultBox"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Square Calculator © 2025
+  </footer>
+
+  <script src="js/square.js"></script>
+  <script src="js/darkmodetoggle.js"></script>
+</body>
+</html>
